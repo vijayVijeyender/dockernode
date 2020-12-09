@@ -1,7 +1,7 @@
 
 From node:latest
 
-WORKDIR D:/Docker/server
+WORKDIR C:\Users\Dell\Downloads\Docker
 COPY package*.json ./
 RUN npm install
 COPY . ./
