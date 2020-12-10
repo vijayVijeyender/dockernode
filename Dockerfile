@@ -1,9 +1,8 @@
 
-From node:latest
-
-WORKDIR C:\Users\Dell\Downloads\Docker
-COPY package*.json ./
+FROM node:9-slim
+WORKDIR /app
+COPY package.json /app
 RUN npm install
-COPY . ./
-EXPOSE 3001
-CMD ["node","server.js"]
+COPY . /app
+EXPOSE 8080
+CMD ["node", "app.js"]
