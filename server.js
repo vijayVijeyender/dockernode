@@ -9,7 +9,7 @@ app.use(express.json())
 
 
 app.get("/", (req,res)=>{
-  res.send("Hi karthick");
+  res.send("Hi vijay");
 })
 
 app.listen(3001, function () {
