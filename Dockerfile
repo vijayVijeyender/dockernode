@@ -5,4 +5,4 @@ COPY package.json /app
 RUN npm install
 COPY . /app
 EXPOSE 2020
-CMD ["node", "app.js"]
+CMD ["node", "server.js"]
